@@ -4,39 +4,36 @@
 
 This project focuses on performing Exploratory Data Analysis (EDA) on a global layoffs dataset using MySQL.
 
-The analysis explores layoffs across companies, industries, funding stages, and time periods to identify major trends, companies with the highest layoffs, and periods with significant workforce reductions.
+The analysis explores layoffs across companies, industries, company stages, and time periods to identify major trends and patterns in workforce reductions.
 
 The analysis was performed on the cleaned `layoffs_staging2` table.
 
 ## Objectives
 
-- Analyze the overall scale of layoffs.
+- Analyze overall layoffs and identify major trends.
 - Identify companies with the highest number of layoffs.
-- Find industries most affected by layoffs.
-- Analyze layoffs by year and month.
-- Compare layoffs across different company stages.
-- Identify companies with the highest average percentage of employees laid off.
+- Analyze layoffs across different industries and company stages.
+- Examine yearly and monthly layoff trends.
 - Calculate cumulative layoffs over time.
-- Find the top 5 companies with the highest layoffs for each year.
+- Identify the top 5 companies with the highest layoffs for each year.
 
 ## Tools & Technologies
 
 - MySQL
 - SQL
-- CTEs (Common Table Expressions)
+- Common Table Expressions (CTEs)
 - Window Functions
-- Aggregations
-- GROUP BY
-- DENSE_RANK()
-- Date Functions
-- String Functions
+- Aggregate Functions
+- Data Analysis
 
-## Analysis Performed
+## Key Analysis
 
-### 1. Dataset Overview
+### 1. Maximum Layoffs
 
-Examined the cleaned dataset to understand its structure and available data.
+Find the maximum number and percentage of layoffs recorded in the dataset.
 
 ```sql
-SELECT *
+SELECT 
+    MAX(total_laid_off) AS max_laid_off,
+    MAX(percentage_laid_off) AS max_percentage_laid_off
 FROM layoffs_staging2;
