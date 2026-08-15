@@ -37,3 +37,14 @@ SELECT
     MAX(total_laid_off) AS max_laid_off,
     MAX(percentage_laid_off) AS max_percentage_laid_off
 FROM layoffs_staging2;
+
+### 2. Companies With 100% Layoffs
+
+Identify companies that laid off their entire workforce and compare them based on funding raised.
+
+```sql
+SELECT *
+FROM layoffs_staging2
+WHERE percentage_laid_off = 1
+ORDER BY funds_raised_millions DESC;
+
