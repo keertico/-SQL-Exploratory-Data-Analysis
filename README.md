@@ -134,6 +134,35 @@ SELECT *
 FROM Company_Year_Rank
 WHERE ranking &lt;= 5;</code></pre>
 
-Conclusion
+<h2>SQL Skills Demonstrated</h2>
 
+<ul>
+  <li>Data Exploration</li>
+  <li>Data Aggregation</li>
+  <li>GROUP BY and ORDER BY</li>
+  <li>SUM(), AVG(), MIN(), MAX()</li>
+  <li>Date Functions</li>
+  <li>Common Table Expressions (CTEs)</li>
+  <li>Window Functions</li>
+  <li>DENSE_RANK()</li>
+  <li>PARTITION BY</li>
+  <li>Rolling Totals</li>
+  <li>Ranking and Comparative Analysis</li>
+</ul>
+
+<h2>Key Questions Answered</h2>
+
+<ul>
+  <li>Which companies had the highest number of layoffs?</li>
+  <li>Which industries were most affected?</li>
+  <li>Which years had the highest layoffs?</li>
+  <li>How did layoffs change month by month?</li>
+  <li>How many layoffs accumulated over time?</li>
+  <li>Which companies ranked in the top 5 for layoffs each year?</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>
 This project demonstrates how SQL can be used to perform exploratory data analysis and extract meaningful insights from real-world data. It combines aggregation, time-based analysis, CTEs, and window functions to analyze layoff patterns across companies, industries, and years.
+</p>
