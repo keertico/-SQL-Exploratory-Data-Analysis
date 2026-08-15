@@ -134,4 +134,6 @@ SELECT *
 FROM Company_Year_Rank
 WHERE ranking &lt;= 5;</code></pre>
 
+Conclusion
 
+This project demonstrates how SQL can be used to perform exploratory data analysis and extract meaningful insights from real-world data. It combines aggregation, time-based analysis, CTEs, and window functions to analyze layoff patterns across companies, industries, and years.
